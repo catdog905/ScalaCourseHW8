@@ -16,7 +16,6 @@ Compile / compile / scalacOptions ++= Seq(
   "-unchecked",
 )
 
-
 lazy val root = (project in file("."))
   .settings(
     name := "hw8",
