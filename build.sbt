@@ -1,7 +1,7 @@
 import Dependencies.*
 
-ThisBuild / scalaVersion     := "2.13.11"
-ThisBuild / version          := "0.1.0-SNAPSHOT"
+ThisBuild / scalaVersion := "2.13.11"
+ThisBuild / version := "0.1.0-SNAPSHOT"
 
 Compile / compile / scalacOptions ++= Seq(
   "-Werror",
@@ -13,7 +13,7 @@ Compile / compile / scalacOptions ++= Seq(
   "-Xlint",
   "-Xlint:-byname-implicit",
   "-Xlint:-implicit-recursion",
-  "-unchecked",
+  "-unchecked"
 )
 
 lazy val root = (project in file("."))
@@ -21,5 +21,6 @@ lazy val root = (project in file("."))
     name := "hw8",
     libraryDependencies ++= Seq(
       scalaTest % Test,
+      typeLevel
     )
   )
